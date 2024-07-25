@@ -102,6 +102,7 @@ class DushuImagePipeline(ImagesPipeline):
 
         for image_url in item['imgUrl']:
             image_url = image_url
+            print(image_url,"==============")
             yield scrapy.Request(image_url,headers = headers)
 
     def item_completed(self, results, item, info):

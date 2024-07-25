@@ -14,9 +14,7 @@ def add_space(value):
 
 class DushuItem(scrapy.Item):
     bookname = scrapy.Field()
-    author = scrapy.Field(
-        input_processor = MapCompose(add_space)
-    )
+    author = scrapy.Field()
     imgUrl = scrapy.Field()
     detailsUrl = scrapy.Field()
     summary = scrapy.Field()
