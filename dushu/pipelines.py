@@ -100,9 +100,11 @@ class DushuImagePipeline(ImagesPipeline):
             'Referer': "https://img.dushu.com",
        }
 
-        for image_url in item['imgUrl']:
-            image_url = image_url
-            yield scrapy.Request(image_url,headers = headers)
+        #
+        # for image_url in item['imgUrl']:
+        #     image_url = image_url
+        #  图片以list形式
+        yield scrapy.Request(item["imgUrl"],headers = headers)
 
     def item_completed(self, results, item, info):
         #FIX: 图片地址也可以替换为 本地资源图片地址

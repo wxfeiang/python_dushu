@@ -11,6 +11,9 @@ def add_jobbole(value):
     return value + '自定义后缀------'
 
 
+
+
+
 class DushuItemLoader(ItemLoader):
     # 自定义itemloader
     default_output_processor = TakeFirst()
@@ -20,7 +23,9 @@ class DushuItem(scrapy.Item):
     author = scrapy.Field(
         input_processor = MapCompose(add_jobbole)
     )
-    imgUrl = scrapy.Field()
+    imgUrl = scrapy.Field(
+
+    )
     detailsUrl = scrapy.Field()
     summary = scrapy.Field()
     pass
