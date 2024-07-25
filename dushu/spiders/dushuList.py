@@ -35,6 +35,7 @@ class DushulistSpider(scrapy.Spider):
 
 
     def details(self,response):
+        # TODO: 暂存对 loader 处理
         item_loader = response.meta["item"]
 
         summary = response.xpath('//div[@class="book-summary"][1]//div[@class="text txtsummary"]/text()').extract_first()

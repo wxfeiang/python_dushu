@@ -44,8 +44,8 @@ MEDIA_ALLOW_REDIRECTS =True
 
 # Override the default request headers:
 DEFAULT_REQUEST_HEADERS = {
-   "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-   "Accept-Language": "en",
+    'Accept': 'application/x-json;text/x-json;charset=utf-8',
+    'Accept-Language': 'zh-CN,zh;q=0.9',
    "USER_AGENT" : "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
 }

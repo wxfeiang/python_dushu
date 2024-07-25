@@ -1,7 +1,8 @@
 
 import scrapy
 from scrapy.loader import ItemLoader
-from scrapy.loader.processors import MapCompose, TakeFirst
+from itemloaders.processors import TakeFirst, Join, MapCompose, Identity
+
 
 
 # 还可以对里面的每一个值 处理
